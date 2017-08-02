@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="mecaota works portfolio">
+    <meta name="keywords" content="mecaota">
+    <title>mecaota works</title>
+    <style>
+        section.heroimage{background-repeat: no-repeat;background-attachment:fixed;background-size: cover;background-image: url("image/IMG_8651.jpg");background-size: cover;}
+        .is-fullheight{min-height: 100vh;}
+    </style>
+</head>
+
+<body>
+    <!-- メニュー&ファーストスクリーン -->
+    <section class="heroimage">
+        <div class="hero is-medium is-fullheight">
+            <!-- Hero header: will stick at the top -->
+            <div class="hero-head is-title">
+                <header id="header" class="nav fixed has-shadow">
+                    <div class="container">
+                        <div class="nav-left">
+                            <a class="nav-item is-tab is-brand" href="http://bulma.io">
+      <img src="https://pbs.twimg.com/profile_images/816959228698951680/vM06RsvD_400x400.jpg" alt="mecaota face" width="40" height="40">
+    mecaota</a>
+                        </div>
+                        <div class="nav-center"></div>
+                        <span onclick="changeOpen()" id="nav-toggle" class="nav-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <div id="nav-menu" class="nav-right nav-menu">
+                            <a ref="" class="nav-item is-tab">about</a>
+                            <a ref="" class="nav-item is-tab">works</a>
+                            <a ref="" class="nav-item is-tab">collections</a>
+                            <a ref="" class="nav-item is-tab">contact</a>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <!-- Hero content: will be in the middle -->
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="columns">
+                        <div class="column is-half">
+                            <div class="notification opacity">
+                                <h2 class="subtitle">welcome.</h2>
+                                <h1 class="title"><strong>mecaota.work</strong></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero footer: will stick at the bottom -->
+            <div class="hero-foot">
+                <div class="scroll-nav">
+                    <i class="fa fa-angle-double-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 本文ここから -->
+    <main class="">
+        <section id="concept" class="">
+            <div class="wrap single-line has-text-centered">
+                <div class="column notification">
+                    <article id="concept" class="content">
+                        <p>Python,Javascript,SASS.</p><br>
+                        <p>the other, C, Cpp, Java, Processing etc...</p><br>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特徴紹介 -->
+        <section id="homemade" class="">
+            <div class="wrap">
+                <div class="column notification is-success">
+                    <div class="columns">
+                        <div class="column">
+                            <article class="">
+                                <p class="title">PC making and power user</p>
+                                <p class="content">親いわくパソコンに触り始めたのは3歳頃だそうです。自分でPCを立ち上げて某パンの顔をしたヒーローのゲームをしていたそうです。そこにルーツがあるのかは知りませんが、ずっとPCを触ることが好きで、遅いPCを動かすためにレジストリを触ったり、パーツ換装したり、今でもPC自作を嗜んでいます。</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="column image1 right"></div>
+            </div>
+        </section>
+
+
+        <section id="id_photo" class="">
+            <div class="wrap reverse">
+                <div class="column image1 left"></div>
+                <div class="column notification is-success">
+                    <div class="columns">
+                        <div class="column">
+                            <article class="">
+                                <p class="title">Cyclist</p>
+                                <p class="content">自転車乗りです。住んでる周りを100km程度の範囲で走ってみたり、ファンライドイベントで各地を走ってみたり。ママチャリに乗っていたときから自転車が好きでした。その愛は大学1年次に創設した大学自転車部に現れており、現在も後輩たちへその愛は引き継がれています。</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="developping_film" class="">
+            <div class="wrap">
+                <div class="column notification is-success">
+                    <div class="columns">
+                        <div class="column">
+                            <article class="">
+                                <p class="title">Traveler</p>
+                                <p class="content">旅行するのが趣味です。小さい頃から月に1回はどこか高速道路に乗るくらいの長距離の遠出をしないと泣いてたくらい好きです。現在も夏休みや春休みの長期休みを使って南は関西、北は道東エリアなどレンタカーを借りたり、18切符を使ったりして旅をしています。</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="column image1 right"></div>
+            </div>
+        </section>
+
+
+        <section id="silver_photo" class="">
+            <div class="wrap reverse">
+                <div class="column image1 left"></div>
+                <div class="column notification is-success">
+                    <div class="columns">
+                        <div class="column">
+                            <article class="">
+                                <p class="title">Creditcard Collecter</p>
+                                <p class="content">小学生の時から走りの非接触電子マネーカードを所持していたり、大手コンビニのポイントカードを集めていたりしましたが、現在もその流れでクレジットカード集めが趣味です。大学3年修了次で既にカード枚数は10枚に達し、現在も増え続けています。使っているかは謎です。</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="technique" class="">
+            <div class="wrap">
+                <div class="column notification is-success">
+                    <div class="columns">
+                        <div class="column">
+                            <article class="">
+                                <p class="title">Gadget Collecter</p>
+                                <p class="content">スマホやタブレットを買い漁ったり、変な端末や周辺機器があれば思わず手に取ってしまう癖があるようです。現在も机の周りは増殖の一途を辿り、よくわからないものが増えていきます。</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="column image1 right"></div>
+            </div>
+        </section>
+        
+        <section id="concept" class="">
+            <div class="wrap single-line has-text-centered">
+                <div class="column notification">
+                    <article id="concept" class="content">
+                        <p>Fun is fast.</p><br>
+                        <p>Don't redevelop the wheel.</p><br>
+                        <p></p><br>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- 本文ここまで -->
+
+    <!-- footer -->
+    <footer class="">
+        <div class="columns is-gapless">
+            <div class="column copyright">
+                <p>Produced by <a ref="http://mecaota.work/">mecaota</a>.</p>
+
+            </div>
+        </div>
+    </footer>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google analytics -->
+    <!-- <script async defer type="text/javascript" src="js/g_analytics.js"></script> -->
+    <!-- js framework -->
+    <script async defer src="js/wow.min.js"></script>
+    <!--  other js code -->
+    <script async defer src="js/action.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+
+</html>
