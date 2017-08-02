@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import "../../node_modules/bulma/bulma.sass";
+
+//プレフィックス配列
+$prefixList: -webkit-, -moz-, -o-, -ms-, null;
+
+//スマホサイズ切り替えポイント
+$mobile-size:767px;
+
+//プロパティにプレフィックスを付与するmixin
+@mixin addPrefix($style, $value){
+    @each $prefix in $prefixList{
+        #{$prefix}#{$style}:$value;
+    }
+}
+
+a {
+    color: #fff;
+}
+
+header.nav{
+    background-color: $white !important;
+}
+
+section{
+    *{
+        background-clip: border-box;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+    }
+    .image1{background-image: url("../image/IMG_7562.jpg");}
+
+    .image2{background-image: url("../image/IMG_7751.jpg");}
+
+    .right{
+        background-position: left;
+    }
+    .left{
+        background-position: right;
+    }
+}
+
+.notification.is-marginless{
+    margin-bottom: 0;
+}
+
+
+.wrap{
+    display: flex;
+    flex-direction:row;
+    height: 50vh;
+    >.column {
+        width: 100%;
+        >article{
+            padding-top: 30%;
+        }
+    }
+    .notification{
+        margin:0;
+    }
+    @media only screen and (max-width: $mobile-size) {
+        flex-direction:column;
+        height: 100vh;
+        &.reverse{
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.opacity{
+    opacity: 0.9;
+    &h1,h2,h3,article{
+        opacity: 1;
+    }
+    &.clear{
+        opacity: 0;
+    }
+}
+
+.scroll-nav{
+    font-size: 70px;
+    text-align: center;
+    color:$white;
+
+}
+
+.copyright {
+    text-align: center;
+}
+
+.address {
+    text-align: left;
+    vertical-align: top;
+    align-content: center;
+}
+
+#map {
+    width: 65%;
+    height: 350px;
+    overflow: hidden;
+    color: black;
+}
+
+/*ブレークポイント 767pxよりも小さい幅*/
+@media only screen and (max-width: $mobile-size) {
+    address {
+        padding-top: 0;
+    }
+    section{
+        &.right,.left{
+            background-position: right 0px left 0px;
+            background-size: cover;
+        }
+    }
+    #map {
+        width: 100%;
+    }
+}
