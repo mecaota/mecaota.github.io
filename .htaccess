@@ -1,0 +1,17 @@
+<Files ~ ".(gif|jpe?g|png|ico|otf|ttf|eot|woff)$">
+	Header set Cache-Control "max-age=2592000, public"
+</Files>
+<Files ~ ".(css|js|html|gz|text)$">
+	Header set Cache-Control "max-age=86400, public"
+</Files>
+<IfModule mod_deflate.c>
+#モジュールを有効化
+SetOutputFilter DEFLATE
+#レガシーブラウザへの対応
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+#対象から画像を除外
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|ico)$ no-gzip dont-vary
+#プロクシサーバへの対応
+Header append Vary User-Agent env=!dont-vary
